@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  text-align: center;
+
+  &__text {
+    position: relative;
+    padding-top: 8px;
+    text-align: left;
+    z-index: 2;
+  }
+
+  &__line {
+    margin: 30px 0 40px;
+  }
+
+  @include breakpoint(large up) {
+    height: 500px;
+
+    &__text {
+      padding-top: 60px;
+    }
+
+    &__line {
+      margin: 40px 0 50px;
+    }
+
+    &__image {
+      max-width: 620px;
+      position: absolute;
+      top: 40px;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}

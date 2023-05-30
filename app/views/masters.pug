@@ -1,0 +1,27 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+          li
+            a(href='/') О компании
+          li Наши мастера
+      h1 Наши мастера
+
+block content
+  - var masters = [1,2,3,4,5,1,2,3,4,5]
+  main.section.section_circles
+    .row
+      ul.no-bullet
+        each master in masters
+          li.large-4.medium-6.columns.end
+            include partials/master
+    .row
+      .u-mt30.column.text-center
+        button.button.hollow Показать еще
+
+  include partials/map

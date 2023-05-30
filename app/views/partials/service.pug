@@ -1,0 +1,37 @@
+mixin service-card(service, idx)
+  .service(style=`background-image: url(/images/services/${idx+1}.jpg)`)
+    .service__icon
+      +icon(idx)
+    .service__bg
+      .service__top-border
+        include ../partials/border
+      .service__bg-icon(class="service__bg-icon-#{idx}")
+        +icon(idx)
+    .service__body
+      .service__title !{service}
+      a.service__button.button.primary.hollow.u-plain(href="/service.html")
+        | Подробнее об услуге
+        span.service__arrow
+          svg(width="18px" height="14px")
+            use(xlink:href="#icon-arrow")
+
+mixin icon(idx)
+  case idx
+    when 0
+      svg
+        use(xlink:href='#icon-service_0')
+    when 1
+      svg
+        use(xlink:href='#icon-service_1')
+    when 2
+      svg
+        use(xlink:href='#icon-service_2')
+    when 3
+      svg
+        use(xlink:href='#icon-service_3')
+    when 4
+      svg
+        use(xlink:href='#icon-service_4')
+    when 5
+      svg
+        use(xlink:href='#icon-service_5')

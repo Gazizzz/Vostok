@@ -1,0 +1,24 @@
+.map
+  .row
+    .map__column.columns
+      .map__contacts
+        header
+          h2.map__contacts-title
+            span.section__title Контакты
+            span.u-inline.u-line.section__line
+        .map__contacts-buttons.button-group
+          button.button.js-map-button.js-map-button-selected(data-lat="55.7940641", data-lng="49.1976899" ) На Космонавтов
+          button.button.hollow.js-map-button(data-lat="55.7484439", data-lng="49.1101538" ) На Турбинной
+        .map__contacts-item
+          .map__contacts-icon
+            img(src="/images/map.svg")
+          | ул.Космонавтов д.46Б
+        .map__contacts-item
+          .map__contacts-icon
+            img(src="/images/time.svg")
+          | Режим работы: 9:00 – 19:00
+        .map__contacts-item
+          .map__contacts-icon
+            img(src="/images/cellphone.svg")
+          a.tel(href="tel:+78432070916") +7 (843) 207-09-16
+  #map.map__content

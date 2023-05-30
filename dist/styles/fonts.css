@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "museo_sans_cyrl";
+  src: url("/fonts/ofont.ru_museo_sans_cyrl_100.woff2") format("woff2"), url("/fonts/ofont.ru_museo_sans_cyrl_100.woff") format("woff");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: "museo_sans_cyrl";
+  src: url("/fonts/ofont.ru_museo_sans_cyrl_300.woff2") format("woff2"), url("/fonts/ofont.ru_museo_sans_cyrl_300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "museo_sans_cyrl";
+  src: url("/fonts/ofont.ru_museo_sans_cyrl_500.woff2") format("woff2"), url("/fonts/ofont.ru_museo_sans_cyrl_500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "museo_sans_cyrl";
+  src: url("/fonts/ofont.ru_museo_sans_cyrl_900.woff2") format("woff2"), url("/fonts/ofont.ru_museo_sans_cyrl_900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: "museo_sans_cyrl";
+  src: url("/fonts/ofont.ru_museo_sans_cyrl_700.woff2") format("woff2"), url("/fonts/ofont.ru_museo_sans_cyrl_700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+html.font-loaded,
+html.font-loaded body,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "museo_sans_cyrl"; }

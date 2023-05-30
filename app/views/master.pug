@@ -1,0 +1,83 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+          li
+            a(href='/') О компании
+          li
+            a(href='/') Наши мастера
+          li Константин Константинопольский
+      h1.u-text-ellipsis Константин Константинопольский
+
+block content
+  - var stars = [1,2,3,4,5]
+  main.section.section_circles
+    .row
+      .column
+        .master.card.card_row
+          .card__image_row.card__image.large-6.columns(style="background-image: url(/images/man.jpg)")
+          .card__body.large-6.columns.card__body_master.master__body
+            h2.card__header.card__header_large.u-text-ellipsis Константин Константинопольский
+            .card__small О ценка специалиста:
+            .master__stars.card__stars
+              each star in stars
+                img.master__star.card__stars-item(src="/images/star.svg")
+            ul.master__info.no-bullet
+              li.master__info-item
+                | Должность:
+                strong  Авто механик
+              li.master__info-item
+                | Стаж:
+                strong  15 лет
+              li.master__info-item
+                | Специализация:
+                strong  Электроника
+            .master__footer
+              button.button.u-plain Записаться к этому мастеру
+    .row
+      .columns
+        section.section
+          header.section__header
+            h2
+              span.section__title О мастере
+              span.u-inline.u-line.section__line
+          p Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет оценить значение систем массового участия. Равным образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Таким образом консультация с широким активом позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Задача организации, в особенности же новая модель организационной деятельности позволяет выполнять важные задания по разработке позиций, занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+          p Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Не следует, однако забывать, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+        section.section.section_plain
+          header.section__header
+            h2
+              span.section__title Профессиональные навыки и услуги
+              span.u-inline.u-line.section__line
+          p Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Не следует, однако забывать, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+          ul.styled-list
+            li Услуга или навык
+            li Услуга или навык
+            li Услуга или навык
+            li Услуга или навык
+            li Услуга или навык
+
+    .row
+      .columns
+        section.section.section_plain
+          header.section__header
+            h2
+              span.section__title Отзывы о работе мастера
+              span.u-inline.u-line.section__line
+          ul.feedback
+            each i in [1,2,3]
+              li.feedback__item
+                header.feedback__header
+                  | Андрей, Kia Rio 2014 г. в.
+                  .feedback__stars
+                    each star in stars
+                      img.feedback__star(src="/images/star.svg")
+                .feedback__section Не следует, однако забывать, что начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+    .row
+      .columns
+        include partials/masters
+  include partials/map

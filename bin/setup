@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Make sure we have gulp installed
+if ! which gulp; then
+  yarn install -g gulp
+fi
+
+# Install all dependencies
+yarn install --ignore-scripts
+
+# Setup configurable environment variables
+if [ ! -f .env ]; then
+  cp .env.example .env
+fi

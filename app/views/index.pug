@@ -1,0 +1,121 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      .hero
+        .hero__text
+          h1
+            |Ремонт и обслуживание
+            br
+            | автомобилей КИА
+            br
+            | и Хендай в Казани
+          .hero__line.u-line
+          button.button.primary.js-modal-button Записаться на диагностику
+        img.hero__image(src="/images/auto.png")
+
+include partials/service
+
+block content
+  -
+    var serviceList = [
+      'Ремонт АКПП',
+      'Ремонт МКПП',
+      'Ремонт ДВС',
+      'Ремонт <br> ходовой части',
+      'Диагностика <br> автомобиля',
+      'Техническое <br> обслуживание',
+    ]
+
+  section.section.section_bg-top
+    .row
+      .columns
+        header.section__header
+          h2
+            span.section__title Наши услуги
+            span.u-line.u-inline.section__line
+    .row
+      each service, idx in serviceList
+        .columns.large-4.medium-6
+          +service-card(service, idx)
+
+  section.section.section_description
+    .row
+      .columns.large-6.large-offset-6
+        header.section__header
+          h2
+            span.section__title Разнообразный и богатый опыт
+            span.u-inline.u-line.section__line
+        p Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры способствует подготовки и реализации существенных финансовых и административных условий.
+        p.u-plain Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Не следует, однако забывать, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+  section.section.section_advantages
+    .row
+      .columns
+        header.section__header
+          h2
+            span.section__title Наши преимущества
+            span.u-inline.u-line.section__line
+        ul.advantages.row
+          li.advantages__item.large-3.medium-6.columns
+            img(src="/images/advantages/1.svg")
+            .advantages__text Лучшие специалисты
+          li.advantages__item.large-3.medium-6.columns
+            | 20
+            .advantages__text
+              | 20 летний
+              br
+              | опыт работы
+          li.advantages__item.large-3.medium-6.columns
+            img(src="/images/advantages/3.svg")
+            .advantages__text
+              | Запчасти в наличии,
+              br
+              | дешевле чем
+              br
+              | у дилеров в 2 раза
+          li.advantages__item.large-3.medium-6.columns
+            img(src="/images/advantages/4.svg")
+            .advantages__text
+              | Гарантия на работы
+              br
+              | 1 год или 20 000 км
+  section.section.section_circles
+    .row
+      .columns
+        include partials/masters
+
+    .row.carousel_discount
+      .columns
+        header.section__header
+          h2
+            span.section__title Акции
+            span.u-inline.u-line.section__line
+        - var discounts = [1,2,4,5]
+        .row
+          ul.no-bullet.carousel.js-carousel(data-slick='{"slidesToShow": 2, "slidesToScroll": 2, "responsive": [ { "breakpoint": 1024, "settings": { "slidesToShow": 1, "slidesToScroll": 1 } } ]}')
+            each discount in discounts
+              li.large-4.columns.end
+                include partials/discount
+          .carousel__buttons.js-carousel-buttons.columns
+            button.carousel__button.js-carousel-prev-button
+              img(src="/images/arrow_left.svg")
+            button.carousel__button.js-carousel-next-button
+              img(src="/images/arrow_right.svg")
+            a.carousel__link.link(href="/discounts.html")
+              | Все акции
+              span.link__icon
+                svg(width="18px", height="14px")
+                  use(xlink:href="#icon-arrow")
+
+  section.section.section_about
+    .row
+      .columns.large-6
+        header.section__header
+          h2
+            span.section__title Разнообразный и богатый опыт
+            span.u-inline.u-line.section__line
+        p Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют определения и уточнения направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры способствует подготовки и реализации существенных финансовых и административных условий.
+        p.u-plain Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий. Не следует, однако забывать, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+
+  include partials/map

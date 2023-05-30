@@ -1,0 +1,14 @@
+mixin call-form(className='')
+  form.call(class=`${className}`)
+    h2.call__title Запись на диагностику
+    .row
+      .large-6.columns
+        input(type='text', placeholder='Ваше имя', name="fio")
+        input(type='tel', placeholder='Телефон', name="phone")
+      .large-6.columns
+        textarea.call__textarea(placeholder='Сообщение', name="message")
+    .row
+      .column
+        .call__action
+          button.call__button.button.u-plain(type="submit") Записаться на диагностику
+          .call__help Наш менеджер свяжется с Вами в течении 15 минут

@@ -1,0 +1,10 @@
+<svg width="23" height="30" viewBox="0 0 23 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-547 1407)">
+<g id="Union">
+<use xlink:href="#path0_fill" transform="translate(547 -1407)" fill="#AD2B31"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 21 2L 2 2L 2 22L 21 22L 21 2ZM 21 24L 2 24L 2 28L 21 28L 21 24ZM 2 0L 0 0L 0 2L 0 28L 0 30L 2 30L 21 30L 23 30L 23 28L 23 2L 23 0L 21 0L 2 0ZM 8 25L 14 25L 14 27L 8 27L 8 25Z"/>
+</defs>
+</svg>

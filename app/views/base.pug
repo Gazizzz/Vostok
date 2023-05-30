@@ -1,0 +1,42 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title Gulp Project Template
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="styles/app.css")
+  body
+    include partials/icons
+    include nav
+    block content
+    .widget
+      a.widget__item.widget__item_main.js-modal-button
+        | Записаться на
+        br
+        | диагностику
+      a.widget__item(href="/" target="_blank")
+        svg.icon.icon_vk
+          use(xlink:href='#icon-vk')
+      a.widget__item(href="/" target="_blank")
+        svg.icon.icon_facebook
+          use(xlink:href='#icon-facebook')
+      a.widget__item(href="/" target="_blank")
+        svg.icon.icon_instagram
+          use(xlink:href='#icon-instagram')
+      a.widget__item(href="/" target="_blank")
+        svg.icon.icon_google
+          use(xlink:href='#icon-google')
+    .modal.js-modal
+      .modal__close.js-modal-close &times;
+      .modal__wrap
+        .modal__cell
+          include partials/call_form
+          .modal__container.row.js-modal-container
+            +call-form('call_modal')
+
+    include footer
+    link(rel="stylesheet", href="/styles/fonts.css")
+    link(rel="stylesheet", href="/vendors/slick-carousel/slick/slick.css")
+    include scripts

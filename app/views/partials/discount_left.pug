@@ -1,0 +1,21 @@
+section.section
+  header.section__header
+    h2
+      span.section__title Акции
+      span.u-inline.u-line.section__line
+  .card
+    .card__image.card__image_195(style="background-image: url(/images/discount.jpg)")
+    .card__body.card__body_discount
+      .card__top-border
+        include border
+      header.card__header
+        | Техосмотр
+        br
+        | в подарок
+      .card__footer.card__footer_expanded
+        a.link.card__more(href="/service.html") Подробнее
+  a.button.primary.hollow.button_small(href="/discounts.html")
+    | Все акции
+    span.service__arrow
+      svg(width="18px", height="14px")
+        use(xlink:href="#icon-arrow")

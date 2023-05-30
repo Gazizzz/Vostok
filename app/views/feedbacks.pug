@@ -1,0 +1,32 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+          li Отзывы
+      h1.u-text-ellipsis Отзывы
+
+block content
+  - var stars = [1,2,3,4,5]
+  main.section.section_circles
+    .row
+      .columns
+        section.section
+          ul.feedback-list.no-bullet
+            each i in [1,2,3,4,5]
+              li.feedback-list__item
+                .feedback-list__header Константин Константинопольский
+                .feedback-list__subheader
+                  span.feedback-list__theme Ремонт АКПП на Kia Rio 2014 г. в.
+                  span.feedback-list__author
+                    | Мастер:
+                    a.feedback-list__link.link(href="/")  Константин Константинопольский
+                p.u-plain С другой стороны новая модель организационной деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.
+          .u-mt30.text-center
+            button.button.hollow Загрузить еще отзывы
+
+  include partials/map

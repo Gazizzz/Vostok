@@ -1,0 +1,48 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use xlink:href="#path0_fill" transform="translate(15.484 23.23)" fill="#AD2B31"/>
+  <use xlink:href="#path1_fill" transform="translate(29.677 37.42)" fill="#AD2B31"/>
+  <use xlink:href="#path2_fill" transform="translate(32.258 28.39)" fill="#AD2B31"/>
+  <use xlink:href="#path3_fill" transform="translate(32.258 51.61)" fill="#AD2B31"/>
+  <use xlink:href="#path4_fill" transform="translate(43.871 40)" fill="#AD2B31"/>
+  <use xlink:href="#path5_fill" transform="translate(20.645 40)" fill="#AD2B31"/>
+  <use xlink:href="#path6_fill" transform="translate(44.721 8.97)" fill="#AD2B31"/>
+  <use xlink:href="#path7_fill" fill="#AD2B31"/>
+  <use xlink:href="#path8_fill" transform="translate(70.968 37.42)" fill="#AD2B31"/>
+  <use xlink:href="#path9_fill" transform="translate(65.806 37.42)" fill="#AD2B31"/>
+  <use xlink:href="#path10_fill" transform="translate(40 5.16)" fill="#AD2B31"/>
+  <use xlink:href="#path11_fill" transform="translate(50.613 65.26)" fill="#AD2B31"/>
+  <use xlink:href="#path12_fill" transform="translate(53.627 60.63)" fill="#AD2B31"/>
+  <use xlink:href="#path13_fill" transform="translate(55.941 55.66)" fill="#AD2B31"/>
+  <use xlink:href="#path14_fill" transform="translate(17.924 18.73)" fill="#AD2B31"/>
+  <use xlink:href="#path15_fill" transform="translate(15.057 23.45)" fill="#AD2B31"/>
+  <use xlink:href="#path16_fill" transform="translate(12.972 28.62)" fill="#AD2B31"/>
+  <use xlink:href="#path17_fill" transform="translate(20.879 63.68)" fill="#AD2B31"/>
+  <use xlink:href="#path18_fill" transform="translate(10.984 58.35)" fill="#AD2B31"/>
+  <use xlink:href="#path19_fill" transform="translate(15.715 61.37)" fill="#AD2B31"/>
+  <use xlink:href="#path20_fill" transform="translate(25.806 64.8)" fill="#AD2B31"/>
+  <use xlink:href="#path21_fill" transform="translate(6.452 33.55)" fill="#AD2B31"/>
+  <defs>
+    <path id="path0_fill" d="M20.645 41.29c11.383 0 20.645-9.262 20.645-20.645S32.028 0 20.645 0 0 9.262 0 20.645 9.262 41.29 20.645 41.29zm0-38.71c9.961 0 18.065 8.104 18.065 18.065 0 9.961-8.104 18.065-18.065 18.065-9.961 0-18.065-8.104-18.065-18.065 0-9.961 8.104-18.065 18.065-18.065z"/>
+    <path id="path1_fill" d="M6.452 12.903a6.459 6.459 0 0 0 6.451-6.451A6.459 6.459 0 0 0 6.452 0 6.459 6.459 0 0 0 0 6.452a6.46 6.46 0 0 0 6.452 6.451zm0-10.322a3.876 3.876 0 0 1 3.87 3.871 3.876 3.876 0 0 1-3.87 3.871A3.876 3.876 0 0 1 2.58 6.452a3.876 3.876 0 0 1 3.87-3.871z"/>
+    <path id="path2_fill" d="M3.871 7.742a3.876 3.876 0 0 0 3.871-3.871A3.876 3.876 0 0 0 3.871 0 3.876 3.876 0 0 0 0 3.871a3.876 3.876 0 0 0 3.871 3.871zm0-5.161a1.292 1.292 0 0 1 0 2.58 1.292 1.292 0 0 1 0-2.58z"/>
+    <path id="path3_fill" d="M3.871 0A3.876 3.876 0 0 0 0 3.871a3.876 3.876 0 0 0 3.871 3.871 3.876 3.876 0 0 0 3.871-3.871A3.876 3.876 0 0 0 3.871 0zm0 5.161a1.292 1.292 0 0 1 0-2.58 1.292 1.292 0 0 1 0 2.58z"/>
+    <path id="path4_fill" d="M3.871 7.742a3.876 3.876 0 0 0 3.871-3.871A3.876 3.876 0 0 0 3.871 0 3.876 3.876 0 0 0 0 3.871a3.876 3.876 0 0 0 3.871 3.871zm0-5.161a1.292 1.292 0 0 1 0 2.58 1.292 1.292 0 0 1 0-2.58z"/>
+    <path id="path5_fill" d="M7.742 3.871A3.876 3.876 0 0 0 3.871 0 3.876 3.876 0 0 0 0 3.871a3.876 3.876 0 0 0 3.871 3.871 3.876 3.876 0 0 0 3.871-3.871zm-5.161 0a1.292 1.292 0 0 1 2.58 0 1.292 1.292 0 0 1-2.58 0z"/>
+    <path id="path6_fill" d="M.668 0L0 2.493c11.535 3.089 20.62 12.171 23.71 23.706l2.493-.669C22.876 13.108 13.092 3.325.668 0z"/>
+    <path id="path7_fill" d="M36.129 0h-1.29v7.774C15.513 8.458 0 24.382 0 43.871 0 63.792 16.208 80 36.129 80c19.489 0 35.413-15.513 36.097-34.839H80v-1.29C80 19.681 60.32 0 36.129 0zm0 77.42c-18.5 0-33.549-15.051-33.549-33.55 0-18.065 14.355-32.834 32.259-33.515v5.655c-6.116 1.958-9.687 4.795-9.843 4.922l1.62 2.009c.035-.026 3.04-2.413 8.223-4.21v3.205h1.29c12.096 0 21.936 9.84 21.936 21.935v1.29h3.971a35.428 35.428 0 0 1 1.19 9.033h2.58c0-3.05-.387-6.078-1.108-9.033h4.947C68.964 63.063 54.196 77.42 36.13 77.42zm24.483-34.84c-.652-12.492-10.7-22.54-23.192-23.191V2.6c21.743.671 39.308 18.236 39.979 39.98H60.612z"/>
+    <path id="path8_fill" d="M2.58 0H0v2.58h2.58V0z"/>
+    <path id="path9_fill" d="M2.58 0H0v2.58h2.58V0z"/>
+    <path id="path10_fill" d="M2.58 0H0v2.58h2.58V0z"/>
+    <path id="path11_fill" d="M0 2.147L2.014 3.76a38.136 38.136 0 0 0 1.707-2.305L1.59 0A36.722 36.722 0 0 1 0 2.147z"/>
+    <path id="path12_fill" d="M0 2.36l2.232 1.294c.478-.823.93-1.676 1.342-2.535L1.248 0A35.757 35.757 0 0 1 0 2.36z"/>
+    <path id="path13_fill" d="M0 2.519l2.404.94c.352-.902.67-1.815.94-2.716L.872 0C.622.834.328 1.682 0 2.519z"/>
+    <path id="path14_fill" d="M3.721 1.613L1.707 0A38.136 38.136 0 0 0 0 2.305L2.132 3.76a36.813 36.813 0 0 1 1.59-2.147z"/>
+    <path id="path15_fill" d="M3.574 1.294L1.342 0C.864.823.412 1.676 0 2.535l2.327 1.12c.384-.8.805-1.594 1.247-2.36z"/>
+    <path id="path16_fill" d="M.94 0C.589.902.272 1.815 0 2.716l2.472.743c.25-.833.545-1.68.873-2.52L.94 0z"/>
+    <path id="path17_fill" d="M0 2.402c.9.353 1.813.669 2.715.94L3.458.87A33.627 33.627 0 0 1 .94 0L0 2.402z"/>
+    <path id="path18_fill" d="M0 2.014c.746.597 1.521 1.17 2.303 1.706L3.76 1.59A35.71 35.71 0 0 1 1.613 0L0 2.014z"/>
+    <path id="path19_fill" d="M0 2.235c.83.479 1.683.93 2.534 1.34l1.119-2.326A36.672 36.672 0 0 1 1.29 0L0 2.235z"/>
+    <path id="path20_fill" d="M0 6.165v2.581c12.963 0 21.115-6.463 21.456-6.738L19.835 0C19.759.062 12.059 6.165 0 6.165z"/>
+    <path id="path21_fill" d="M0 0c0 12.963 6.463 21.115 6.738 21.456l2.01-1.62C8.685 19.76 2.581 12.01 2.581 0H0z"/>
+  </defs>
+</svg>

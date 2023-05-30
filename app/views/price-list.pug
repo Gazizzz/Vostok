@@ -1,0 +1,96 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+          li Прайс-лист
+      h1.u-text-ellipsis Прайс-лист
+
+block content
+  - var stars = [1,2,3,4,5]
+  main.section.section_circles
+    .row
+      .columns.large-9
+        section.section
+          header.section__header
+            h2
+              span.section__title Ремонт АКПП
+              span.u-inline.u-line.section__line
+          ul.price-list.no-bullet
+            li.price-list__item
+              | Снятие АКПП
+              .price-list__value от 2500 руб.
+            li.price-list__item
+              | Установка АКПП
+              .price-list__value от 2500 руб.
+            li.price-list__item
+              | Разборка АКПП
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Дефектовка АКПП (причина поломки, список дефектных деталей, общая стоимость ремонта)
+              .price-list__value от 2500 руб.
+            li.price-list__item
+              | Снятие, установка АКПП свыше 4 нормо/час
+              .price-list__value от 8000 руб.
+            li.price-list__item
+              | Замена жидкости в АКПП частичная (без снятия поддона)
+              .price-list__value от 300 руб.
+            li.price-list__item
+              | Замена жидкости в АКПП частичная (со снятием поддона)
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Замена жидкости в АКПП со снятием поддона CVT (1 фильтр)
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Замена жидкости в АКПП со снятием поддона CVT (2 фильтра)
+              .price-list__value от 1000 руб.
+            li.price-list__item
+              | Полная замена жидкости в АКПП
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Полная замена масла (наши расходные материалы) до 10 л.
+              .price-list__value от 300 руб.
+            li.price-list__item
+              | Полная замена масла (наши расходные материалы) свыше 10 л.
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Замена масла в двигателе
+              .price-list__value от 300 руб.
+            li.price-list__item
+              | Замена масла в раздатке, мостах
+              .price-list__value от 150 руб.
+            li.price-list__item
+              | Снятие/установка защиты (оригинал) 1 шт.
+              .price-list__value от 100 руб.
+            li.price-list__item
+              | Снятие/установка защиты (неоригинал) 1 шт.
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Диагностика АКПП (электронная) без снятия с авто
+              .price-list__value БЕСПЛАТНО
+            li.price-list__item
+              | 1 нормо/час	от
+              .price-list__value от 500 руб.
+            li.price-list__item
+              | Промывка радиатора
+              .price-list__value от 1200 руб.
+            li.price-list__item
+              | Долив ATF
+              .price-list__value от 100 руб.
+          .card.card_row.card_detail
+            .card__image_row.card__image.large-6.columns(style="background-image: url(/images/content/discount.jpg)")
+            .card__body.card__body_discount.card__body_large.large-6.columns
+              .service-card__body
+                h2.card__header.card__header_large.u-text-ellipsis Получить налоговый вычет
+                .card__small Современные автоматические коробки передач выпускаются с увеличенным количеством скоростей. 8-9 ступеней...
+                .master__footer
+                  a.link Подробнее
+
+      .columns.large-3
+        include partials/discount_left
+
+  include partials/map

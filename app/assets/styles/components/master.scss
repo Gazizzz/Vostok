@@ -1,0 +1,29 @@
+.master {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__stars {
+    margin-top: 9px;
+  }
+
+  &__star {
+    width: 35px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6px;
+  }
+
+  &__info-item {
+    width: 50%;
+    flex: 1 0 50%;
+    margin-top: 23px;
+    padding-right: 5px;
+  }
+
+  &__footer {
+    margin-top: 39px;
+  }
+}

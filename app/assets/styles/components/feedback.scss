@@ -1,0 +1,45 @@
+.feedback {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    padding-bottom: 32px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-c4;
+    }
+
+    &:not(:first-child) {
+      margin-top: 34px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    line-height: 23px;
+    font-size: 16px;
+    color: $gray-a1;
+  }
+
+  &__stars {
+    margin: 0 -5px;
+  }
+
+  &__star {
+    width: 25px;
+    margin: 0 5px;
+  }
+
+  @include breakpoint(small only) {
+    &__header {
+      flex-direction: column;
+    }
+
+    &__stars {
+      margin-top: 5px;
+    }
+  }
+}

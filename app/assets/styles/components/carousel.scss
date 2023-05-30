@@ -1,0 +1,21 @@
+.carousel {
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__button:first-child {
+    margin-right: 15px;
+  }
+
+  &__link {
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &_discount {
+    margin-top: 65px;
+  }
+}

@@ -1,0 +1,128 @@
+.service {
+  position: relative;
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  &:hover & {
+    &__bg {
+      transition: all .2s ease-in;
+      transform: translateY(150%) scale(2, 1);
+    }
+
+    &__title {
+      color: $white;
+    }
+
+    &__button {
+      background: $primary-color;
+      color: $white;
+    }
+
+    &__arrow {
+      fill: $white;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    top: 28px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 110px;
+    background: $white;
+    fill: $primary-color;
+    box-shadow: 0px 4px 20px rgba(173, 43, 49, 0.3);
+    z-index: 1;
+
+    svg {
+      max-height: 62px;
+      max-width: 62px;
+    }
+  }
+
+  &__bg {
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: $secondary-color;
+    z-index: 1;
+    transition: all .2s ease-out;
+  }
+
+  &__bg-icon {
+    position: absolute;
+    bottom: -6%;
+    right: -12%;
+    height: 180px;
+    width: 180px;
+    fill: rgba(255, 255, 255, 0.5);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__top-border {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 230px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 39px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  &__title {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  &__button.button {
+    margin-top: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    fill: $primary-color;
+  }
+
+  @include breakpoint(large up) {
+    &__button {
+      margin-left: 35px;
+      margin-right: 35px;
+    }
+  }
+}

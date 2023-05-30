@@ -1,0 +1,47 @@
+.map {
+  position: relative;
+
+  &__column {
+    position: relative;
+  }
+
+  &__content {
+    height: 510px;
+  }
+
+  &__contacts {
+    padding: 20px;
+    background: $white;
+    z-index: 1;
+  }
+
+  &__contacts-title {
+    line-height: 1;
+  }
+
+  &__contacts-buttons {
+    margin: 15px 0 20px;
+  }
+
+  &__contacts-item {
+    margin-bottom: 20px;
+  }
+
+  &__contacts-icon {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 30px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  @include breakpoint(medium up) {
+    &__contacts {
+      position: absolute;
+      top: 49px;
+      left: 10px;
+      border-radius: 6px;
+      box-shadow: 0px 4px 30px rgba(173, 43, 49, 0.2);
+    }
+  }
+}

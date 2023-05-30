@@ -1,0 +1,37 @@
+.feedback-list {
+  &__header {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__subheader {
+    margin-bottom: 26px;
+    color: $gray-a1;
+  }
+
+  &__theme {
+    margin-right: 15px;
+  }
+
+  &__link {
+    font-weight: normal;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      padding-top: 34px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray-db;
+      padding-bottom: 27px;
+    }
+  }
+
+  @include breakpoint (small only) {
+    &__theme {
+      display: block;
+    }
+  }
+}

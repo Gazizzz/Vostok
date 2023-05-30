@@ -1,0 +1,45 @@
+.footer {
+  padding: 30px 0;
+  background: $blue-color;
+  text-align: center;
+  color: $white;
+
+  &__nav {
+    margin-bottom: 10px;
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__nav-item {
+    margin-bottom: 15px;
+  }
+
+  &__nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__copyright {
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  &__website {
+    font-weight: 300;
+    color: $white;
+    text-decoration: underline;
+  }
+
+  @include breakpoint(medium up) {
+    &__nav-item {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 10px;
+    }
+  }
+}

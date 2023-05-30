@@ -1,0 +1,91 @@
+header.header
+  .row
+    .column
+      .header__top
+        a.header__logo(href="/")
+          img(src="/images/logo.svg", alt="Восток")
+          .header__logo-split
+          .header__logo-label Обслуживание корейских авто
+        .header__info.show-for-large
+          img.header__icon(src="/images/map.svg")
+          | ул.Космонавтов д.46Б
+        .header__info.show-for-large
+          img.header__icon(src="/images/time.svg")
+          | Режим работы: 9:00 – 19:00
+        .header__phone.hide-for-small-only
+          img.header__icon(src="/images/cellphone.svg")
+          a.header__phone-tel(href="tel:+78432070916") +7 (843) 207-09-16
+  .row
+    .column
+      .header__nav#nav-menu
+        .title-bar.header__title-bar(data-responsive-toggle='nav-menu')
+          button.menu-icon.header__menu-icon(type='button', data-toggle='nav-menu')
+        nav.nav
+          ul.nav__list.header__nav-list
+            li.nav__item.nav__item_current
+              a.nav__link(href="/about.html") О компании
+            li.nav__item
+              a.nav__link(href="/discounts.html") Акции
+            li.nav__item.dropdown
+              a.nav__link(href="/services.html") Услуги
+              ul.dropdown__list
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_0')
+                    | Ремонт АКПП
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_1')
+                    | Ремонт МКПП
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_2')
+                    | Ремонт ДВС
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_3')
+                    | Ремонт ходовой части
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_4')
+                    | Диагностика автомобиля
+                li.dropdown__item
+                  a.dropdown__link(href="/service.html")
+                    span.dropdown__icon
+                      svg
+                        use(xlink:href='#icon-service_5')
+                    | Техническое обслуживание
+            li.nav__item
+              a.nav__link(href="/price-list.html") Прайс-лист
+            li.nav__item
+              a.nav__link(href="/feedbacks.html") Отзывы
+            li.nav__item
+              a.nav__link(href="/contacts.html") Контакты
+            li.nav__item.nav__item_split.hide-for-large
+            .nav__item.nav__item-info.hide-for-large
+              .nav__icon
+                img(src="/images/map.svg")
+              | ул.Космонавтов д.46Б
+            .nav__item.nav__item-info.hide-for-large
+              .nav__icon
+                img(src="/images/time.svg")
+              | Режим работы: 9:00 – 19:00
+            .nav__item.nav__item-info.hide-for-large
+              .nav__icon
+                img(src="/images/cellphone.svg")
+              a.nav__phone-tel(href="tel:+78432070916") +7 (843) 207-09-16
+        .header__call-container
+          button.header__call.js-modal-button
+            img.header__call-icon(src="/images/person.svg")
+            .show-for-large Заказать обратный звонок
+  block headerInner

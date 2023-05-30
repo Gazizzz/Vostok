@@ -1,0 +1,8 @@
+<svg width="60" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <use xlink:href="#path0_fill" fill="#AD2B31"/>
+  <use xlink:href="#path1_fill" transform="translate(17 17)" fill="#FFF"/>
+  <defs>
+    <path id="path0_fill" d="M60 30c0 16.569-30 50-30 50S0 46.569 0 30C0 13.431 13.431 0 30 0c16.569 0 30 13.431 30 30z"/>
+    <path id="path1_fill" d="M26 13c0 7.18-5.82 13-13 13S0 20.18 0 13 5.82 0 13 0s13 5.82 13 13z"/>
+  </defs>
+</svg>

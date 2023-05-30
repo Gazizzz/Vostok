@@ -1,0 +1,45 @@
+.widget {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9;
+  text-align: right;
+
+  &__item {
+    width: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primary-color;
+    border-radius: 25px 0px 0px 25px;
+    fill: $primary-color;
+
+    &:hover {
+      fill: $white;
+      background: lighten($primary-color, 5%);
+    }
+  }
+
+  &__item_main {
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+    line-height: 1.1;
+    background: $primary-color;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  @include breakpoint(large up) {
+    display: flex;
+  }
+}

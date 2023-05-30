@@ -1,0 +1,61 @@
+extends base
+
+block headerInner
+  .row
+    .columns
+      nav(aria-label='You are here:', role='navigation')
+        ul.breadcrumbs
+          li
+            a(href='/') Главная
+          li Контакты
+      h1.u-text-ellipsis Контакты
+
+block content
+  - var stars = [1,2,3,4,5]
+  main.section.section_circles
+    .row
+      .columns
+        section.section
+          header.section__header
+            h2
+              span.section__title Схема проезда
+              span.u-inline.u-line.section__line
+          img(src="/images/content/map.jpg")
+        section.section
+          header.section__header
+            h2
+              span.section__title Контактная информация
+              span.u-inline.u-line.section__line
+          .contacts__list
+            .contacts__list-item
+              img.contacts__icon(src="/images/map.svg")
+              | ул.Космонавтов д.46Б
+            .contacts__list-item
+              img.contacts__icon(src="/images/cellphone.svg")
+              a.u-phone(href="tel:+78432070916") +7 (843) 207-09-16
+            .contacts__list-item
+              img.contacts__icon(src="/images/time.svg")
+              | Режим работы: 9:00 – 19:00
+        section.section
+          header.section__header
+            h2
+              span.section__title Социальная сети
+              span.u-inline.u-line.section__line
+          .contacts__social
+            a.contacts__social-item
+              svg.icon.icon_vk
+                use(xlink:href='#icon-vk')
+            a.contacts__social-item
+              svg.icon.icon_facebook
+                use(xlink:href='#icon-facebook')
+            a.contacts__social-item
+              svg.icon.icon_instagram
+                use(xlink:href='#icon-instagram')
+            a.contacts__social-item
+              svg.icon.icon_instagram
+                use(xlink:href='#icon-google')
+
+        section.section
+          include partials/call_form
+          +call-form
+

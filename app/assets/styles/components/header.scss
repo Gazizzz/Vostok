@@ -1,0 +1,178 @@
+.header {
+  background-image: url("/images/header_small.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  padding-bottom: 19px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+
+  &__logo-label {
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-tel {
+    color: $white;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__nav {
+    position: relative;
+    margin: 0 -0.625rem 20px;
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+    background: $white;
+  }
+
+  &__nav-list {
+    display: none;
+    margin: 65px 0 0 0;
+  }
+
+  &__call-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 65px;
+    width: 65px;
+    overflow: hidden;
+  }
+
+  &__call {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: -65px;
+    height: 280px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: $primary-color;
+    border-radius: 280px;
+    color: $white;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background: scale-color($color: $primary-color, $lightness: 5%);
+    }
+  }
+
+  &__call-icon {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &__title-bar {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    padding: 20px;
+    background: $white;
+  }
+
+  &__menu-icon {
+    width: 23px;
+    height: 19px;
+
+    &::after {
+      height: 4px;
+      background: $black;
+      box-shadow: 0 8px 0 $black, 0 16px 0 $black;
+    }
+  }
+
+  @include breakpoint(xlarge up) {
+    &__top {
+      font-size: 16px;
+    }
+  }
+
+  @include breakpoint(large up) {
+    background-image: url("/images/header.jpg");
+
+    &__call-container {
+      width: 280px;
+    }
+
+    &__call {
+      margin-left: -275px;
+      justify-content: center;
+    }
+
+    &__nav {
+      height: 65px;
+      margin: 0 0 20px;
+      padding-right: 275px;
+    }
+
+    &__nav-list {
+      display: flex;
+      margin: 0;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__title-bar {
+      display: none;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    &__logo-split {
+      display: inline-block;
+      vertical-align: middle;
+      width: 1px;
+      height: 45px;
+      margin-left: 8px;
+      margin-right: 10px;
+      background: $dark-gray;
+    }
+
+    &__logo-label {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 120px;
+      margin: 0;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    .opened & {
+      &__nav-list {
+        display: block;
+      }
+
+      &__call {
+        width: 77px;
+        height: 77px;
+        top: -12px;
+        transform: none;
+        margin-left: -55px;
+      }
+    }
+  }
+}
