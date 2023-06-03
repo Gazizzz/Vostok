@@ -9,7 +9,10 @@ gulp.task("server", () => {
   );
   gulp.watch(`${config.appDir}/assets/fonts/**/*`, ["fonts"]);
   gulp.watch(`${config.appDir}/assets/scripts/**/*`, ["js"]);
-  gulp.watch(`${config.appDir}/assets/styles/**/*.scss`, ["scss"]);
+  gulp.watch(
+    `${config.appDir}/assetshttps://gazizzz.github.io/Vostok/styles/**/*.scss`,
+    ["scss"]
+  );
   gulp.watch(`${config.appDir}/views/**/*.pug`, ["templates"]);
   developmentServer();
 });
