@@ -8,7 +8,10 @@ gulp.task("server", () => {
     ["images"]
   );
   gulp.watch(`${config.appDir}/assets/fonts/**/*`, ["fonts"]);
-  gulp.watch(`${config.appDir}/assets/scripts/**/*`, ["js"]);
+  gulp.watch(
+    `${config.appDir}/assetshttps://gazizzz.github.io/Vostok/scripts/**/*`,
+    ["js"]
+  );
   gulp.watch(
     `${config.appDir}/assetshttps://gazizzz.github.io/Vostok/styles/**/*.scss`,
     ["scss"]
