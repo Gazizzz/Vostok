@@ -24,27 +24,28 @@
   // }
 
   &_bg-top {
-    background-image: url("/images/circle_left.png");
+    background-image: url("https://gazizzz.github.io/Vostok/images/circle_left.png");
     background-position: 0 30px;
   }
 
   &_circles {
-    background-image: url("/images/circle_left.png"), url("/images/circle_right.png");
+    background-image: url("https://gazizzz.github.io/Vostok/images/circle_left.png"),
+      url("https://gazizzz.github.io/Vostok/images/circle_right.png");
     background-position: 0 5%, 100% 95%;
   }
 
   &_description {
-    background-image: url("/images/description.jpg");
+    background-image: url("https://gazizzz.github.io/Vostok/images/description.jpg");
     background-size: cover;
   }
 
   &_advantages {
-    background-image: url("/images/advantages.jpg");
+    background-image: url("https://gazizzz.github.io/Vostok/images/advantages.jpg");
     background-size: cover;
   }
 
   &_about {
-    background-image: url("/images/about.jpg");
+    background-image: url("https://gazizzz.github.io/Vostok/images/about.jpg");
     background-size: cover;
   }
 
@@ -54,7 +55,7 @@
     }
 
     &_advantages {
-      background-image: url("/images/advantages_small.jpg");
+      background-image: url("https://gazizzz.github.io/Vostok/images/advantages_small.jpg");
     }
 
     &_circles {

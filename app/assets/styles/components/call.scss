@@ -3,7 +3,7 @@
   background: $secondary-color;
   border-radius: 5px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-  background-image: url('/images/call.svg');
+  background-image: url("https://gazizzz.github.io/Vostok/images/call.svg");
   background-position: 100% 100%;
   background-position: calc(100% - 13px) 100%;
   background-repeat: no-repeat;
@@ -43,7 +43,7 @@
     margin: 20px 0 0 0;
   }
 
-  @include breakpoint (medium down) {
+  @include breakpoint(medium down) {
     padding: 30px;
 
     &__action {
@@ -55,7 +55,7 @@
     }
   }
 
-  @include breakpoint (small only) {
+  @include breakpoint(small only) {
     padding: 15px;
 
     &__button {

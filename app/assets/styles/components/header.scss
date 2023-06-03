@@ -1,5 +1,5 @@
 .header {
-  background-image: url("/images/header_small.jpg");
+  background-image: url("https://gazizzz.github.io/Vostok/images/header_small.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -112,7 +112,7 @@
   }
 
   @include breakpoint(large up) {
-    background-image: url("/images/header.jpg");
+    background-image: url("https://gazizzz.github.io/Vostok/images/header.jpg");
 
     &__call-container {
       width: 280px;
